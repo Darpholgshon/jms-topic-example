@@ -1,0 +1,23 @@
+# -------------------------------------------------------------------------
+# Set the active profiles.
+# -------------------------------------------------------------------------
+spring:
+  profiles:
+    active: production
+
+server:
+  port: 0
+
+# -------------------------------------------------------------------------
+# Microservice Service Registration
+# -------------------------------------------------------------------------
+microservice:
+  basePath: services
+  server:
+    name: topics/consumer/v1
+
+activemq:
+  username: admin
+  password: admin
+  broker:
+    connectionString: tcp://localhost:61616
